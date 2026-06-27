@@ -1,0 +1,15 @@
+# Python / build / editor cruft
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.idea/
+.vscode/
+.pytest_cache/
+
+# Demo output
+weave_out.png
+*.log

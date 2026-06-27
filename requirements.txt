@@ -1,0 +1,5 @@
+# Runtime deps for just-weave (the library). Install with: pip install -r requirements.txt
+moderngl>=5.10        # GL context + the GLSL weave program (headless EGL or windowed)
+numpy>=1.23,<3        # arrays + framebuffer readback
+opencv-python>=4.9    # loads the correction textures (3DStackCorrection_A/B.png)
+Pillow>=10            # only needed for examples/weave_image.py (image IO)

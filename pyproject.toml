@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "just-weave"
+version = "0.1.0"
+description = "Standalone lenticular weave for the Samsung Odyssey 3D (G90XF) glasses-free 3D display"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "m-j-tilley" }]
+keywords = ["3d", "stereoscopic", "lenticular", "glasses-free", "samsung-odyssey-3d", "g90xf", "weave"]
+dependencies = [
+    "moderngl>=5.10",
+    "numpy>=1.23,<3",
+    "opencv-python>=4.9",
+]
+
+[project.optional-dependencies]
+examples = ["Pillow>=10"]
+test = ["pytest>=7", "Pillow>=10"]
+
+[project.urls]
+Homepage = "https://github.com/m-j-tilley/just-weave"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+just_weave = ["calib/*/*.pkl", "calib/*/*.png"]
