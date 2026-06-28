@@ -13,7 +13,7 @@ Thanks to people over at [r/Odyssey3D](https://www.reddit.com/r/Odyssey3D/) for 
 ## Disclaimer
 
 - **Unofficial.** Not produced, endorsed by, or affiliated with Samsung, Leia, or Dimenco.
-- **Use at your own risk.** No warranty. It drives display hardware over a custom interface.
+- **Use at your own risk.** No warranty. The weave is **reverse-engineered for interoperability**; this library ships captured G90XF calibration data — see [`DISCLAIMER.md`](DISCLAIMER.md).
 - Made by me with a helping of Claude Code vibes, proceed with caution.
 
 ## Install
