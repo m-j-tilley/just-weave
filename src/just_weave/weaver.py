@@ -160,7 +160,7 @@ class Weaver:
         self._prog_sbs["uSrcSwapLR"] = int(swap_lr)
         self._upload(sbs, 0, "sbs")
         self._tA.use(2); self._tB.use(3)
-        fbo.use(); self.ctx.clear(0.0, 0.0, 0.0)
+        fbo.use()                      # no clear: the full-screen weave quad overwrites every pixel
         self._vao_sbs.render()
         return fbo
 
